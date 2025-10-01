@@ -32,3 +32,87 @@ p {
 #beware {
 	height:300px; /* hauteur maximale de beware = 300px */ 
 }
+a {
+	text-decoration: none; /* liens non soulignés */
+	color:#0088FF; /* couleur des liens bleu clair */
+}
+
+a:hover {
+  color: orange; /* couleur orange lorsqu'on passe la souris sur un lien */ 
+}
+
+
+/* 1. Fond bleu pour l'en-tête */
+thead {
+  background-color: #00AAFF;
+}
+
+/* 2. Texte violet pour les skills dans le tableau */
+table .skill {
+  color: #640051;
+}
+
+/* 3. Alternance des couleurs de lignes */
+tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #CCC;
+}
+
+/* 1. Padding vertical sur les titres de sections */
+h1, h2, h3, h4, h5, h6 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* 2. Margin vertical sur les paragraphes */
+p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* 3. Padding horizontal sur .skill dans les tableaux */
+table .skill {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* 4. Bordure sur les h3 */
+h3 {
+  border: 1px solid #CCCCCC;
+}
+
+/* 1. Centrer le body horizontalement */
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; 
+}
+
+/* 1. Image Chuck jeune à gauche */
+img[src="Images/chuck-jeune.jpg"] {
+  float: left;
+  margin-right: 15px;
+}
+
+/* 2. Image beware à droite */
+#beware {
+  float: right;
+  margin-left: 15px;
+}
+
+p {
+  clear: left;
+}
+#social-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#social-icons img {
+  display: block;
+  margin-bottom: 10px;
+}
