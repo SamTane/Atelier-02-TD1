@@ -20,11 +20,22 @@
 				Chuck Norris, Portés disparus 3 (1988), écrit par Arthur Silver, Larry Levinson, James Bruner, Chuck Norris, Steve Bing
 			</cite>
 			<nav>
-				<ul> 
-					<li><a href="index.html">Accueil</a></li> 
-					<li><a href="contact.html">Contact</a></li> 
-				</ul>
-			</nav>
+    <div><a href="index.html">Accueil</a>
+        <div class="submenu">
+            <div><a href="/one.html">one</a></div>
+            <div><a href="/two.html">two</a></div>
+            <div><a href="/three.html">three</a></div> 
+        </div>
+    </div><!--
+    --><div><a href="facts.html">Facts</a></div><!-- 
+    --><div><a href="news.html">Actu</a></div><!-- 
+    --><div><a href="contact.html">Contact</a>
+        <div class="submenu">  <!-- ← CORRIGE ICI : "submenu" pas "subemnu" -->
+            <div><a href="./other.html">other</a></div>
+            <div><a href="./another.html">another</a></div>
+        </div>
+    </div>
+</nav>
 		</header>
 		
 		<main>
