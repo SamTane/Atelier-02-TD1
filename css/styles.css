@@ -116,3 +116,67 @@ p {
   display: block;
   margin-bottom: 10px;
 }
+
+nav {
+    width: 75%;
+    margin: 0 auto;
+    height: 200px;
+    background-color: #FF00FF;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;       
+}
+
+nav div {
+	display: inline;
+    background-color: #5BBDBF;
+}
+
+nav a {
+    background-color: #c0d5c2;
+	padding-left: 10px;
+    padding-right: 10px;
+	border-left: 2px solid black;
+}
+
+nav div:first-child a {
+    border-left: none;  /* ← Supprime la bordure du premier */
+}
+
+/* Les div parents deviennent relatifs */
+nav > div {
+    position: relative;
+    width: 100px;
+    display: flex;               /* ← AJOUTE: flex pour centrer le texte */
+    align-items: center;         /* ← AJOUTE: centre le texte verticalement */
+    background-color: #5BBDBF;
+}
+
+/* Les sous-menus en position absolue */
+.submenu {
+    position: absolute;
+    top: 200px;                  /* ← UNE SEULE valeur */
+    left: 0;
+    background-color: #aca;
+    display: none;
+    width: 100px;                /* ← AJOUTE: même largeur */
+}
+
+/* Afficher le sous-menu au survol */
+nav > div:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    border-left: none !important;  /* Pas de bordure dans les sous-menus */
+}
+/* Test 1 : block */
+nav > div {
+    display: block;
+}
+
+/* Test 2 : inline */
+nav > div {
+    display: inline;
+}
+
